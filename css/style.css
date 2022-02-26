@@ -1,0 +1,199 @@
+/*  Import  */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,900&display=swap');
+
+/* Box Model Hack */
+*,
+*::before,
+*::after {
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+body {
+     font-family: 'Roboto', sans-serif;
+}
+/******************************************
+/* LAYOUT
+/*******************************************/
+.container {
+     width: 100%;
+     margin-top: 3rem;
+}
+
+.main-article {
+     width: 50%;
+     float: left;
+}
+
+.secondary-articles {
+     width: 50%;
+     float: right;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+/* Navigation */
+nav {
+     background: #000;
+}
+
+.logo {
+     margin-right: 5rem;
+     padding: 0.5rem;
+     width: 10rem;
+}
+
+nav li {
+     height: 100%;
+     border-right: 1px solid #fff;
+     width: 5rem;
+     text-align: center;
+     float: left;
+     list-style: none;
+     padding: 0.75rem 0 0.5rem 0;
+}
+
+li a {
+     text-decoration: none;
+     color: #fff;
+}
+
+li:last-of-type {
+     border-right: none;
+}
+
+input {
+     width: 7rem;
+     margin-left: 1rem;
+}
+/* Date */
+.upper-section-title {
+     margin-left: 0.5rem;
+}
+.date{
+     font-weight: 300;
+     width: 100%;
+     position: relative;
+     margin-left: 55.9rem;
+}
+
+/* Articles */
+.highlights {
+     background: #fff;
+     padding: 0.25rem;
+}
+
+.tertiary-articles {
+     clear: both;
+}
+
+.article-img {
+     width: 100%;
+}
+
+.text-block {
+     position: absolute;
+     background: #00000025;
+     width: 90%;
+     bottom: 1rem;
+     right: 0;
+     margin: .2rem;
+     color: #fff;
+     text-shadow: 0.1rem 0.1rem #000000;
+}
+
+/* Large Article Link */
+.article-lg-card {
+     background: #fff;
+     padding: 0.25rem;
+     position: relative;
+}
+
+.article-lg-card > .text-block > h2 {
+     font-size: 1rem;
+}
+
+.article-lg-card > .text-block > p, .article-01-card > .text-block > span {
+     font-size: 0.75rem;
+}
+
+.article-lg-card > .text-block > .pipe {
+     margin-right: 0.5rem
+}
+
+/* Medium Article Link */
+.article-md-card {
+     width: 33.3333%;
+     background: #fff;
+     padding: .25rem;
+     position: relative;
+     float: left;
+}
+
+.article-md-card > .text-block > h2 {
+     font-size: 1rem;
+}
+
+.article-md-card > .text-block > p, .article-01-card > .text-block > span {
+     font-size: 0.75rem;
+}
+
+.article-md-card > .text-block > .pipe {
+     margin-right: 0.5rem
+}
+
+.bottom-text-block > h2 {
+     font-size: 1.25rem;
+}
+
+/* Small Article Link */
+.article-sm-card.padding-fix {
+     padding-top: 0;
+}
+
+.article-sm-card {
+     width: 50%;
+     background: #fff;
+     padding: 0.25rem;
+     position: relative;
+     float: left;
+}
+
+.article-sm-card > .text-block > h2 {
+     font-size: 1rem;
+}
+
+.article-sm-card > .text-block > p, .article-01-card > .text-block > span {
+     font-size: 0.75rem;
+}
+
+.article-sm-card > .text-block > .pipe {
+     margin-right: 0.5rem
+}
+
+
+.red {
+     color: #a82929;
+}
+
+.blue {
+     color: #10576d;
+}
+
+.gray {
+     color:#5c5c5c;
+}
